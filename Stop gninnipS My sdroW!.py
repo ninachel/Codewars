@@ -7,7 +7,3 @@ def spin_words(sentence):
         else:
             answer.append(i)
     return ' '.join(answer)
-
-
-sentence = 'Hey fellow warriors'
-print(spin_words(sentence))
