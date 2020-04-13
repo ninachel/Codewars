@@ -1,2 +1,9 @@
-def duplicate_count(s):
-    return len([c for c in set(s.lower()) if s.lower().count(c) > 1])
+def duplicate_count(text):
+    seen = set()
+    dupes = set()
+    for char in text:
+        char = char.lower()
+        if char in seen:
+            dupes.add(char)
+        seen.add(char)
+    return len(dupes)
